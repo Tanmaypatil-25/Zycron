@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+  <meta charset="UTF-8" />
+  <title>Login – TaskFlow</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/frontend/css/styles.css" />
 </head>
+<body class="auth-page">
 
-<body>
-    <div class="auth-box">
-        <h2>Login</h2>
+  <div class="auth-container">
+    <h2>Welcome back</h2>
+    <p class="auth-subtitle">Login to your Zycron account</p>
 
-        <input type="email" placeholder="Email">
-        <input type="password" placeholder="Password">
+    <form id="loginForm">
+      <label>Email</label>
+      <input type="email" placeholder="you@example.com" required />
 
-        <button class="btn">Login</button>
+      <label>Password</label>
+      <input type="password" placeholder="••••••••" required />
 
-        <p>Don’t have an account? <span>Sign up</span></p>
-    </div>
+      <button class="btn-primary full-width">Login</button>
+    </form>
 
+    <p class="auth-switch">
+      Don’t have an account?
+      <a href="#" id="showSignup">Sign up</a>
+    </p>
+  </div>
+
+  <script src="js/auth.js"></script>
 </body>
-
 </html>
